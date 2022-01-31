@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator anim;
+    private CharacterStats characterStats;
     private GameObject attackTarget;
     private float lastAttackTime;
 
@@ -14,12 +15,14 @@ public class PlayerController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        characterStats = GetComponent<CharacterStats>();
     }
     // Start is called before the first frame update
     void Start()
     {
         mouseManager.Instance.onMouseClicked += MoveToTarget;
         mouseManager.Instance.onEnemyClicked += EventAttack;
+        //characterStats.MaxHealth = 2;
     }
 
     private void EventAttack(GameObject target)
