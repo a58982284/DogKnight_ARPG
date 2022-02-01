@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         agent.isStopped = false;
         transform.LookAt(attackTarget.transform);
         //Todo:修改攻击范围参数
-        while (Vector3.Distance(attackTarget.transform.position,transform.position)>1)
+        while (Vector3.Distance(attackTarget.transform.position,transform.position)>characterStats.attackData.attackRange)
         {
             agent.destination = attackTarget.transform.position;
             yield return null;
