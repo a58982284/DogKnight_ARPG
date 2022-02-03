@@ -1391,7 +1391,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5940281506424997721, guid: 858201d1c6ba9dc48a7eb97135300790, type: 3}
   m_PrefabInstance: {fileID: 5683272111788874405}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &791158845
+--- !u!114 &791158846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1403,6 +1403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0103091c1c374dd458c27d97f0d41235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: a340d13662fd86e49ae4b01610e240b6, type: 2}
+  attackData: {fileID: 11400000, guid: cd02f0f282949c140a6939455004cc0b, type: 2}
+  isCritical: 0
 --- !u!1 &801054677 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6340864210898940280, guid: 37befc890f964d24085a4d6300afa907, type: 3}
@@ -15664,21 +15667,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4661514222627108653, guid: 73cdc4e93ca3e4b4f9679e2fa077aed4, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a5e9ac6bfc1ef0f439aac6766e3ccf10, type: 2}
     - target: {fileID: 4747347106364122307, guid: 73cdc4e93ca3e4b4f9679e2fa077aed4, type: 3}
       propertyPath: m_Name
       value: Slime
-      objectReference: {fileID: 0}
-    - target: {fileID: 4747401515246780308, guid: 73cdc4e93ca3e4b4f9679e2fa077aed4, type: 3}
-      propertyPath: lookAtTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4747401515246780308, guid: 73cdc4e93ca3e4b4f9679e2fa077aed4, type: 3}
-      propertyPath: patrolRange
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4752267866415336175, guid: 73cdc4e93ca3e4b4f9679e2fa077aed4, type: 3}
       propertyPath: m_RootOrder
