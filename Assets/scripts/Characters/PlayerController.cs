@@ -40,6 +40,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isDead = characterStats.CurrentHealth == 0;
+        if (isDead)
+        {
+            GameManager.Instance.NotifyObervers();
+        }
         switchAnimation();
         lastAttackTime -= Time.deltaTime;
     }
