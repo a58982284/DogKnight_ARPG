@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b7a20c75586de541a30afeafe94f006, type: 3}
-  m_Name: Player Data
+  m_Script: {fileID: 11500000, guid: 28318d78e6464c14daf9db2971f802e4, type: 3}
+  m_Name: Grunt Attack
   m_EditorClassIdentifier: 
-  maxHealth: 1000
-  currentHealth: 1000
-  baseDefence: 2
-  currentDefence: 2
+  attackRange: 2.3
+  skillRange: 1.6
+  coolDown: 2
+  minDamage: 5
+  maxDamage: 7
+  criticalMultiplier: 2
+  criticalChance: 0.2

@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour,IEndGameOberver
     public bool isGuard;
     private float speed;
 
-    private GameObject attackTarget;
+    protected GameObject attackTarget;
     public float lookAtTime;
     private float remainLookAtTime;
     private float lastAttackTime;
@@ -198,7 +198,8 @@ public class EnemyController : MonoBehaviour,IEndGameOberver
                 break;
             case EnemyStates.DEAD:
                 coll.enabled = false;
-                agent.enabled = false;
+                //agent.enabled = false;
+                agent.radius = 0;
                 Destroy(gameObject, 2f);
                 break;
             default:
