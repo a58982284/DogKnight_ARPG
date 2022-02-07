@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     private GameObject attackTarget;
     private float lastAttackTime;
     private bool isDead;
+    private float stopDistance;
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         characterStats = GetComponent<CharacterStats>();
+        stopDistance = agent.stoppingDistance;
     }
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+        agent.stoppingDistance = stopDistance;
         agent.isStopped = false;
         agent.destination = target;
     }
@@ -73,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         StopAllCoroutines();
         agent.isStopped = false;
+        agent.stoppingDistance = characterStats.attackData.attackRange; //武器攻击距离
         transform.LookAt(attackTarget.transform);
         //Todo:修改攻击范围参数
         while (Vector3.Distance(attackTarget.transform.position,transform.position)>characterStats.attackData.attackRange)

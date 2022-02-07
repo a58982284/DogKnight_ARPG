@@ -461,11 +461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7650a1c60b7b18e489f50761f2db745e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sightRadius: 0
-  isGuard: 0
-  lookAtTime: 0
+  sightRadius: 10
+  isGuard: 1
+  lookAtTime: 3
   patrolRange: 0
-  kickForce: 25
+  kickForce: 30
 --- !u!114 &6182743890741205508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0103091c1c374dd458c27d97f0d41235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templateData: {fileID: 0}
+  templateData: {fileID: 11400000, guid: 2816ab8b12a986249be8e843d122307c, type: 2}
   characterData: {fileID: 0}
-  attackData: {fileID: 0}
+  attackData: {fileID: 11400000, guid: fc8b118f062de844da4f4f463b2340e6, type: 2}
   isCritical: 0
 --- !u!195 &6182743890741205509
 NavMeshAgent:

@@ -9689,6 +9689,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &995377603 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6182743890922001519, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
+  m_PrefabInstance: {fileID: 6182743890471884204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1050276882
 GameObject:
   m_ObjectHideFlags: 3
@@ -16025,30 +16030,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6182743890741205508, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: attackData
+    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
+      propertyPath: handPos
       value: 
-      objectReference: {fileID: 11400000, guid: fc8b118f062de844da4f4f463b2340e6, type: 2}
-    - target: {fileID: 6182743890741205508, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: templateData
+      objectReference: {fileID: 995377603}
+    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
+      propertyPath: rockPrefab
       value: 
-      objectReference: {fileID: 11400000, guid: 2816ab8b12a986249be8e843d122307c, type: 2}
-    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: isGuard
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: kickForce
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: lookAtTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6182743890741205515, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
-      propertyPath: sightRadius
-      value: 10
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2050629053934896340, guid: 1f520ca129f8381468c18a324949e14d, type: 3}
     - target: {fileID: 6182743891185870601, guid: b6107929d1a0c8541a035a2ff31a98db, type: 3}
       propertyPath: m_RootOrder
       value: 15
